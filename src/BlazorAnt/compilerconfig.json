@@ -7,10 +7,10 @@
     "outputFile": "dist/Components/index.css",
     "inputFile": "Components/index.less"
   },
-  {
-    "outputFile": "dist/Utils/MediaQuery/enquire.js",
-    "inputFile": "Utils/MediaQuery/enquire.js"
-  },
+  //{
+  //  "outputFile": "dist/Utils/MediaQuery/enquire.js",
+  //  "inputFile": "Utils/MediaQuery/enquire.js"
+  //},
   {
     "outputFile": "dist/Core.js",
     "inputFile": "Core.js"

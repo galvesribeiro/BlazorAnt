@@ -25,4 +25,26 @@
     <Folder Include="dist\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="Components\Button\AntButton.cshtml" />
+    <None Include="Components\Button\AntButtonGroup.cshtml" />
+    <None Include="Components\Icon\AntIcon.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <BlazorGenerate Remove="Components\Button\AntButton.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <BlazorGenerate Remove="Components\Button\AntButtonGroup.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <BlazorGenerate Remove="Components\Divider\AntDivider.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <BlazorGenerate Remove="Components\Icon\AntIcon.cshtml" />
+  </ItemGroup>
+
 </Project>

@@ -6,14 +6,14 @@ using System.Collections.Generic;
 
 namespace BlazorAnt.Components
 {
-    public class DividerComponent : BlazorComponent
+    public class AntDividerComponent : BlazorComponent
     {
         private const string DIVIDER_CLASS = "divider";
         public string PrefixCls { get; set; } = "ant";
         public DividerType Type { get; set; } = DividerType.Horizontal;
         public DividerOrientation Orientation { get; set; } = DividerOrientation.Undefined;
         public string ClassName { get; set; }
-        public RenderFragment Children { get; set; }
+        public RenderFragment ChildContent { get; set; }
         public bool Dashed { get; set; }
         public string Style { get; set; }
 
@@ -25,8 +25,8 @@ namespace BlazorAnt.Components
                 new[] { DIVIDER_CLASS, this.GetTypeClass() },
                 new Dictionary<string, Func<bool>>
                 {
-                    { $"divider-with-text{this.GetOrientationClass()}", () => this.Children != null },
-                    { $"divider-dashed", () => this.Dashed }
+                    { $"{DIVIDER_CLASS}-with-text{this.GetOrientationClass()}", () => this.ChildContent != null },
+                    { $"{DIVIDER_CLASS}-dashed", () => this.Dashed }
                 });
             this.ClassString = string.IsNullOrWhiteSpace(this.ClassName) ? classes : $"{this.ClassName} {classes}";
         }

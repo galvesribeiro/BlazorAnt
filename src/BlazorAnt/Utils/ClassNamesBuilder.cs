@@ -34,6 +34,7 @@ namespace BlazorAnt.Utils
             {
                 foreach (var opt in options)
                 {
+                    if (string.IsNullOrWhiteSpace(opt.Key)) continue;
                     if (opt.Value == null) continue;
 
                     if (opt.Value())

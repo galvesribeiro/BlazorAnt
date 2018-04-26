@@ -1,0 +1,40 @@
+@page "/Button"
+
+<div>
+    <AntButton HtmlType=@ButtonHTMLType.Button Type=@ButtonType.Primary>Primary</AntButton>
+    <AntButton>Default</AntButton>
+    <AntButton Type=@ButtonType.Dashed>Dashed</AntButton>
+    <AntButton Type=@ButtonType.Danger>Danger</AntButton>
+</div>
+
+<div>
+    <h4>Basic</h4>
+    <AntButtonGroup>
+        <AntButton>Cancel</AntButton>
+        <AntButton>OK</AntButton>
+    </AntButtonGroup>
+    <AntButtonGroup>
+        <AntButton disabled>L</AntButton>
+        <AntButton disabled>M</AntButton>
+        <AntButton disabled>R</AntButton>
+    </AntButtonGroup>
+    <AntButtonGroup>
+        <AntButton>L</AntButton>
+        <AntButton>M</AntButton>
+        <AntButton>R</AntButton>
+    </AntButtonGroup>
+
+    <h4>With Icon</h4>
+    <AntButtonGroup>
+        <AntButton type=@ButtonType.Primary>
+            <AntIcon type="left" />Go back
+        </AntButton>
+        <AntButton type=@ButtonType.Primary>
+            Go forward<AntIcon type="right" />
+        </AntButton>
+    </AntButtonGroup>
+    <AntButtonGroup>
+        <AntButton Icon="cloud" />
+        <AntButton Icon="cloud-download" />
+    </AntButtonGroup>
+</div>

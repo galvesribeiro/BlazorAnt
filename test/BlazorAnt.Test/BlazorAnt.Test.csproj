@@ -17,4 +17,25 @@
     <ProjectReference Include="..\..\src\BlazorAnt\BlazorAnt.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <BlazorGenerate Remove="Pages\ButtonsDemo.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\ButtonsDemo.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\ButtonsDemo.cshtml" />
+    <None Include="Pages\IconsDemo.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <BlazorGenerate Remove="Pages\IconsDemo.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\IconsDemo.cshtml" />
+  </ItemGroup>
+
 </Project>

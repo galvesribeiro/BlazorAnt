@@ -1,9 +1,9 @@
-@inherits DividerComponent
+@inherits AntDividerComponent
 
 <div class=@ClassString style=@Style>
-    @if (Children != null)
+    @if (ChildContent != null)
     {
-        @Children
+        @ChildContent
     }
     else
     {

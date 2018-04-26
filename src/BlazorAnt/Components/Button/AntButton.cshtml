@@ -1,0 +1,24 @@
+@inherits AntButtonComponent
+
+@if (this.HtmlType == ButtonHTMLType.Anchor)
+{
+    <a class=@ClassString style=@Style onmousedown=@OnMouseDown onmouseup=@OnMouseUp onkeyup=@OnKeyUp onkeydown=@OnKeyDown onkeypress=@OnKeyPress disabled=@Disabled onclick=@HandleClick href=@HRef>
+        @if (!string.IsNullOrWhiteSpace(IconType))
+        {
+            <AntIcon Type=@IconType />
+        }
+
+        @ChildContent
+    </a>
+}
+else
+{
+    <button class=@ClassString style=@Style onmousedown=@OnMouseDown onmouseup=@OnMouseUp onkeyup=@OnKeyUp onkeydown=@OnKeyDown onkeypress=@OnKeyPress disabled=@Disabled onclick=@HandleClick href=@HRef>
+        @if (!string.IsNullOrWhiteSpace(IconType))
+        {
+            <AntIcon Type=@IconType />
+        }
+
+        @ChildContent
+    </button>
+}
