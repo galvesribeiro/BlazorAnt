@@ -1,0 +1,18 @@
+[
+  {
+    "outputFile": "dist/antd/style/index.css",
+    "inputFile": "antd/style/index.less"
+  },
+  {
+    "outputFile": "dist/Components/index.css",
+    "inputFile": "Components/index.less"
+  },
+  {
+    "outputFile": "dist/Utils/MediaQuery/enquire.js",
+    "inputFile": "Utils/MediaQuery/enquire.js"
+  },
+  {
+    "outputFile": "dist/Core.js",
+    "inputFile": "Core.js"
+  }
+]

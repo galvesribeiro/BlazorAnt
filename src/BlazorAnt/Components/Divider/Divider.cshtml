@@ -1,0 +1,12 @@
+@inherits DividerComponent
+
+<div class=@ClassString style=@Style>
+    @if (Children != null)
+    {
+        @Children
+    }
+    else
+    {
+        <span class=@($"{PrefixCls}-divider-inner-text")></span>
+    }
+</div>
